@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Transfer learning with Tensorflow.js</title>
+	<!-- Load TensorFlow.js -->
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+	<!-- Load MobileNet -->
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+	<!-- Load KNN Classifier -->
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<h1>Transfer learning with Tensorflow.js</h1>
+	<h2>Image classification using the Webcam</h2>
+
+	<main>
+		<video autoplay id="webcam" width="224" height="224"></video>
+		<section class="button-section left">
+			<button class="button">A</button>
+			<div class="examples-text">
+				<span class="info-text"></span>
+			</div>
+		</section>
+
+		<section class="button-section right">
+			<button class="button">B</button>
+			<div class="examples-text">
+				<span class="info-text"></span>
+			</div>
+		</section>
+		<section class="button-section right">
+			<button class="button">C</button>
+			<div class="examples-text">
+				<span class="info-text"></span>
+			</div>
+		</section>
+		
+
+		<section class="button-section test">
+			<button class="button test-predictions">Test predictions</button>
+		</section>
+	</main>
+
+	<script src="client.js"></script>
+</body>
+
+</html>
